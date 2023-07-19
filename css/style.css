@@ -53,7 +53,7 @@ h4 {
 }
 
 .bar {
-  position: relative;
+  display: flex;
   justify-content: space-between;
   height: 40px;
 }
@@ -71,27 +71,23 @@ a {
 
 .menu {
   cursor: pointer;
-  position: absolute;
   left: 0;
   color: white;
 }
 
 .logo {
-  position: absolute;
   text-align: center;
-  left: 50vh;
   background-image: url(../img/boolean-logo.png);
   width: 130px;
   height: 30px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  ba
+  margin-left: -130px;
 }
 
 .action {
   cursor: pointer;
-  position: absolute;
   right: 0;
   color: white;
 }
@@ -150,9 +146,9 @@ li {
 }
 
 .discount {
-  position: absolute;
+  position: relative;
   font-size: 15px;
-  bottom: 135px;
+  bottom: 70px;
   padding: 5px;
   background-color: red;
   color: white;
@@ -160,18 +156,13 @@ li {
 }
 
 .eco {
-  position: absolute;
+  position: relative;
   font-size: 15px;
-  bottom: 135px;
-  left: 50px;
+  bottom: 70px;
   padding: 5px;
   background-color: green;
   color: white;
   z-index: 3;
-}
-
-.eco.single {
-  left: 0;
 }
 
 .price {
