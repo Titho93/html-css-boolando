@@ -181,7 +181,8 @@ footer {
 }
 
 .information {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .privacy li {
@@ -189,8 +190,6 @@ footer {
 }
 
 .social {
-  position: absolute;
-  right: 40px;
   color: white;
 }
 
