@@ -76,7 +76,7 @@ li {
 /* Main  */
 
 .cards {
-padding-top: 30px;
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -89,12 +89,23 @@ padding-top: 30px;
   position: relative;
 }
 
-.img {
-  
+.model {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  cursor: pointer;
 }
 
-.model {
+.model-2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
   width: 100%;
+}
+
+.img:hover .model-2 {
+  z-index: 3;
 }
 
 .heart {
@@ -104,6 +115,7 @@ padding-top: 30px;
   right: 0;
   background-color: white;
   cursor: pointer;
+  z-index: 3;
 }
 
 .heart:hover {
@@ -117,6 +129,7 @@ padding-top: 30px;
   padding: 5px;
   background-color: red;
   color: white;
+  z-index: 3;
 }
 
 .eco {
@@ -127,6 +140,7 @@ padding-top: 30px;
   padding: 5px;
   background-color: green;
   color: white;
+  z-index: 3;
 }
 
 .eco.single {
