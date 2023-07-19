@@ -20,6 +20,15 @@ header {
   background-color: #EF6630;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  z-index: 5;
+  background-color: #EF6630;
+  width: 100%
+}
+
 h2 {
   font-size: 17px;
   color: white;
@@ -72,10 +81,11 @@ a {
   text-align: center;
   left: 50vh;
   background-image: url(../img/boolean-logo.png);
-  width: 180px;
-  height: 40px;
+  width: 130px;
+  height: 30px;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   ba
 }
 
@@ -93,7 +103,7 @@ li {
 /* Main  */
 
 .cards {
-  padding-top: 30px;
+  padding-top: 100px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
