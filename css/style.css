@@ -80,18 +80,17 @@ padding-top: 30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: blue;
 }
 
 .card {
   margin: 10px;
   width: calc(100% / 3 - 20px );
   height: 650px;
-  background-color: #EF6630;
+  position: relative;
 }
 
 .img {
-  position: relative;
+  
 }
 
 .model {
@@ -114,7 +113,7 @@ padding-top: 30px;
 .discount {
   position: absolute;
   font-size: 15px;
-  bottom: 45px;
+  bottom: 135px;
   padding: 5px;
   background-color: red;
   color: white;
@@ -123,11 +122,15 @@ padding-top: 30px;
 .eco {
   position: absolute;
   font-size: 15px;
-  bottom: 45px;
+  bottom: 135px;
   left: 50px;
   padding: 5px;
   background-color: green;
   color: white;
+}
+
+.eco.single {
+  left: 0;
 }
 
 h4 {
@@ -143,4 +146,5 @@ h3 {
 .low-price {
   color: red;
 }
+
 
